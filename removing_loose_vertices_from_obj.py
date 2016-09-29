@@ -64,7 +64,7 @@ def write_to_new_obj(verts_array, faces_array):
 		if vert[1] != 'delete':
 			new_obj_file.write('v ' + str((vert[2])[0]) + ' ' + str((vert[2])[1]) + ' ' + str((vert[2])[2]) + ' ' + '\n')			
 	for face in faces_array:
-		#checing number of vertex in face - 3 or 4
+		#checing number of vertices in face - 3 or 4
 		if len(face[1]) == 3:
 			new_obj_file.write('f ' + str((face[1])[0]) + ' ' + str((face[1])[1]) + ' ' + str((face[1])[2]) + ' ' + '\n')
 		if len(face[1]) == 4:
